@@ -40,7 +40,9 @@ export const initiateHeaderScroll = () => {
   }
 
   let toggleHeader = function (direction, curScroll) {
-    if (direction === 2 && curScroll > 52) {
+    if (direction === 2 && curScroll > 300) {
+      console.log(curScroll);
+      
       //replace 52 with the height of your header in px
 
       header?.classList.add("hide")
