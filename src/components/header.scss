@@ -1,0 +1,85 @@
+h1,
+Link {
+  color: white;
+}
+
+header {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+header.hide {
+  top: -100px;
+}
+
+.change-color {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.navigationBar {
+  list-style-type: none;
+  color: white;
+}
+
+@media all and (min-width: 960px) {
+
+  .flexContainerHeader {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexContainerHeader > h1 {
+    flex: 1;
+  }
+
+  .navigationBar > li {
+    display: inline;
+    margin-left: 3rem;
+    color: white;
+  }
+
+  .navigationBar > li:hover {
+    color: red;
+    transition: all 0.3s ease;
+  }
+
+  .navigationBar > li > a:after {
+    content: " ";
+    width: 14px;
+    height: 20px;
+    background: url(../images/nav-arrow.svg) center center no-repeat;
+    background-size: 14px 20px;
+    opacity: 0;
+    padding-left: 2rem;
+    transition: all 0.2s;
+  }
+
+  .navigationBar > li > a:hover::after {
+    transform: translate(20px, 20px);
+    opacity: 1;
+  }
+}
+
+// mobile menu
+
+.flexContainerHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.active .item {
+  display: block;
+}
