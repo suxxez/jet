@@ -12,6 +12,7 @@ import "@fontsource/open-sans"
 
 import Header from "./header"
 import "./layout.scss"
+import "./index.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

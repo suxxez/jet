@@ -1,0 +1,39 @@
+.mainHeading {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+#introVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+.content {
+    position: relative;
+}
+
+.placeholder {
+    //min-height: 100vh;
+    min-height: calc(100vh - 75px);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.cards > * {
+    width: 250px;
+    margin: 5px;
+}

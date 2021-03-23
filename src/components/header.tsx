@@ -13,7 +13,7 @@ const Header = () => {
     const toggle = document.querySelector(".toggle")
     const menu = document.querySelector(".flexContainerHeader")
 
-    const toggleMenu = () => {
+    let toggleMenu = () => {
       if (menu?.classList.contains("active")) {
         menu?.classList.remove("active")
       } else {
@@ -34,9 +34,12 @@ const Header = () => {
       >
         <ul className="navigationBar">
           <li className="logo">
-            <h1 style={{ margin: 0 }}>
-              <Link to="/">{siteTitle}</Link>
-            </h1>
+            <StaticImage
+              src="../images/logo_white.webp"
+              alt="X"
+              width={126}
+              height={50}
+            />
           </li>
           {elements.map((value, index) => {
             return (
