@@ -29,9 +29,9 @@ const IndexPage = () => (
     <video autoPlay loop muted src={VideoTest} id="introVideo"></video>
     <div className="content">
       <div className="cards">
-        <Card imageSrc="gatsby-astronaut.png" heading="Beratung"></Card>
-        <Card imageSrc="gatsby-icon.png" heading="Planung"></Card>
-        <Card imageSrc="gatsby-astronaut.png" heading="Installation"></Card>
+        <Card imageSrc="beratung.webp" heading="Beratung"></Card>
+        <Card imageSrc="planung.webp" heading="Planung"></Card>
+        <Card imageSrc="installation.webp" heading="Installation"></Card>
       </div>
     </div>
   </Layout>

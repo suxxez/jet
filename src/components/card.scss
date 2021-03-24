@@ -3,7 +3,7 @@
     filter: drop-shadow(5px 5px 4px black);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+.cardContent > * {
+    //margin: 0 100px;
+}
+
 .cardImageWrapper {
-    width: 50%;
+    width: 90%;
 }

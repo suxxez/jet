@@ -19,7 +19,8 @@ const Card = ({ imageSrc, heading }: CardProps) => {
           <Image src={imageSrc}></Image>
         </div>
         <p>
-            In unseren Büros beraten wir Sie gerne und finden die beste Lösung für Ihre Anforderungen und Wünsche.
+          In unseren Büros beraten wir Sie gerne und finden die beste Lösung für
+          Ihre Anforderungen und Wünsche.
         </p>
       </div>
     </>
