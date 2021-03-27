@@ -35,7 +35,7 @@ const Header = () => {
         <ul className="navigationBar">
           <li className="logo">
             <StaticImage
-              src="../images/logo_white.webp"
+              src="../images/logo_elektrotechnik.webp"
               alt="X"
               width={126}
               height={50}
