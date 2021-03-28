@@ -51,7 +51,7 @@ const Header = () => {
 
           <li className="toggle">
             <StaticImage
-              src="../images/hamburger.svg"
+              src="../images/svg/hamburger.svg"
               alt="X"
               className="hamburger"
             />

@@ -15,7 +15,7 @@
 
 .headingBlob {
   position: absolute;
-  background-image: url(../images/blob.svg);
+  background-image: url(../images/svg/blob.svg);
   background-repeat: no-repeat;
   top: 15vh;
 }
@@ -25,6 +25,10 @@
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   width: 50%;
+}
+
+h1 {
+  color: $text-color;
 }
 
 // special mobile rules
@@ -65,15 +69,6 @@
 .content {
   position: relative;
 }
-
-.placeholder {
-  //min-height: 100vh;
-  min-height: calc(100vh - 75px);
-}
-
-/* .titlePlaceholder {
-  min-height: 20vh;
-} */
 
 .cards {
   display: flex;
