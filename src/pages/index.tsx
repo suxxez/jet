@@ -44,7 +44,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="content">
-      <h1 id="Leistungen">Leistungen</h1>
+      <h1 id="leistungen">Leistungen</h1>
       <div className="leistungen">
         <figure>
           <img src={construction} height="200px" />
@@ -55,7 +55,12 @@ const IndexPage = () => (
           <figcaption>Smart Home</figcaption>
         </figure>
         <figure>
-          <StaticImage src="../images/knx.webp" alt="KNX" height={200} className="knxImage"></StaticImage>
+          <StaticImage
+            src="../images/knx.webp"
+            alt="KNX"
+            height={200}
+            className="knxImage"
+          ></StaticImage>
           <figcaption>KNX</figcaption>
         </figure>
         <figure>
@@ -70,6 +75,33 @@ const IndexPage = () => (
           <img src={alarm} height="200px" />
           <figcaption>Alarmanlagen</figcaption>
         </figure>
+      </div>
+      <h1 id="ueber-uns">Über uns</h1>
+      <div className="personCardContainer">
+        <div className="personCard">
+          <StaticImage
+            src="../images/frank.webp"
+            alt="Frank"
+            height={200}
+          ></StaticImage>
+          <h3>Frank Steinheider</h3>
+          <p>
+            +49 171 765 941 0<br />
+            f.steinheider@jet.de
+          </p>
+        </div>
+        <div className="personCard">
+          <StaticImage
+            src="../images/tobias.webp"
+            alt="Tobias"
+            height={200}
+          ></StaticImage>
+          <h3>Tobias Lander</h3>
+          <p>
+            +49 175 452 818 0<br />
+            t.lander@jet.de
+          </p>
+        </div>
       </div>
     </div>
   </Layout>

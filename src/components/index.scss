@@ -29,7 +29,47 @@
 
 h1 {
   color: $text-color;
+  text-align: center;
 }
+
+.content {
+  position: relative;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.leistungen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.personCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personCard {
+  margin: 30px 50px;
+}
+
+.personCard p {
+  text-align: center;
+}
+
+.personCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 // special mobile rules
 @media (max-width: 767.98px) {
@@ -61,6 +101,13 @@ h1 {
     display: none;
   }
 
+  // top and bottom margin to 0 because it looks weird on mobile
+  .personCard {
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
   // Leistungen-Icons placement optimized
   .leistungen > * {
     margin-right: -10px;
@@ -72,25 +119,4 @@ h1 {
     width: 150px;
     height: auto;
   }
-}
-
-.whiteParagraph {
-  color: white;
-}
-
-.content {
-  position: relative;
-}
-
-figcaption {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.leistungen {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-between;
 }

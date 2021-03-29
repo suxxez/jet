@@ -48,10 +48,10 @@ const Header = () => {
             )
           })} */}
           <li className="item">
-            <Link to="#Leistungen">Leistungen</Link>
+            <Link to="#leistungen">Leistungen</Link>
           </li>
           <li className="item">
-            <Link to="#Ueber-Uns">Über uns</Link>
+            <Link to="#ueber-uns">Über uns</Link>
           </li>
           <li className="item">
             <Link to="/karriere">Karriere</Link>
