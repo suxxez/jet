@@ -71,7 +71,7 @@ const IndexPage = () => (
           <img src={network} height="200px" />
           <figcaption>Netzwerk</figcaption>
         </figure>
-        <figure>
+        <figure id="alarmFigure">
           <img src={alarm} height="200px" />
           <figcaption>Alarmanlagen</figcaption>
         </figure>

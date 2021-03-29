@@ -10,7 +10,6 @@
 .mainHeading {
   text-align: left;
   width: 50%;
-  color: $text-color;
 }
 
 .headingBlob {
@@ -119,4 +118,8 @@ figcaption {
     width: 150px;
     height: auto;
   }
+}
+
+.alarmDarkMode {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 }

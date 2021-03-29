@@ -38,6 +38,17 @@ const Header = () => {
               alt="X"
               width={126}
               height={50}
+              imgClassName="logo_normal"
+            />
+            <StaticImage
+              src="../images/logo_white.webp"
+              alt="X"
+              width={126}
+              height={50}
+              className="logo_white"
+              style={{
+                "display": "none"
+              }}
             />
           </li>
           {/* {elements.map((value, index) => {

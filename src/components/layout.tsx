@@ -13,6 +13,7 @@ import "@fontsource/open-sans"
 import Header from "./header"
 import "./layout.scss"
 import "./index.scss"
+import { toggleDarkMode } from "../scripts/dark-mode"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  React.useEffect(() => {
+    const logo = document.querySelector(".logo") as HTMLElement
+    logo.addEventListener("click", toggleDarkMode)
+  })
 
   return (
     <>
