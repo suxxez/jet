@@ -1,5 +1,7 @@
 @import "../variables.scss";
 
+$stardust-color: #444349;
+
 h1,
 Link {
   color: white;
@@ -28,10 +30,12 @@ header.hide {
   top: -100px;
 }
 
-/* .change-color {
-  background-color: black;
+.headerDarkMode.change-color {
+  background: initial;
+  background-color: $stardust-color;
   opacity: 1;
-} */
+  box-shadow: 0px 1px 2px $background-color;
+}
 
 .navigationBar {
   list-style-type: none;
@@ -61,7 +65,7 @@ header.hide {
 }
 
 .itemDarkMode {
-  background-color: #444349;
+  background-color: $stardust-color;
 }
 
 .active .item {

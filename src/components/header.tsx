@@ -33,23 +33,22 @@ const Header = () => {
       >
         <ul className="navigationBar">
           <li className="logo">
-            <StaticImage
-              src="../images/logo_elektrotechnik.webp"
-              alt="X"
-              width={126}
-              height={50}
-              imgClassName="logo_normal"
-            />
-            <StaticImage
-              src="../images/logo_white.webp"
-              alt="X"
-              width={126}
-              height={50}
-              className="logo_white"
-              style={{
-                "display": "none"
-              }}
-            />
+            <div className="logo_normal">
+              <StaticImage
+                src="../images/logo_elektrotechnik.webp"
+                alt="X"
+                width={126}
+                height={50}
+              />
+            </div>
+            <div className="logo_white">
+              <StaticImage
+                src="../images/logo_white.webp"
+                alt="X"
+                width={126}
+                height={50}
+              />
+            </div>
           </li>
           {/* {elements.map((value, index) => {
             return (
