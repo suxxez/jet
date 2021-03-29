@@ -37,6 +37,7 @@ const Header = () => {
               <StaticImage
                 src="../images/logo_elektrotechnik.webp"
                 alt="X"
+                loading="eager"
                 width={126}
                 height={50}
               />
@@ -45,6 +46,7 @@ const Header = () => {
               <StaticImage
                 src="../images/logo_white.webp"
                 alt="X"
+                loading="eager"
                 width={126}
                 height={50}
               />
