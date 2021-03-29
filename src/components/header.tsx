@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { initiateHeaderScroll } from "../scripts/header-scroll"
 
 const Header = () => {
-  const siteTitle = "JET"
   const elements = ["Leistungen", "Über uns", "Kontakt"]
 
   React.useEffect(() => {
@@ -41,14 +40,22 @@ const Header = () => {
               height={50}
             />
           </li>
-          {elements.map((value, index) => {
+          {/* {elements.map((value, index) => {
             return (
               <li className="item" key={index}>
-                <Link to="/">{value}</Link>
+                <Link to="#{Value}">{value}</Link>
               </li>
             )
-          })}
-
+          })} */}
+          <li className="item">
+            <Link to="#Leistungen">Leistungen</Link>
+          </li>
+          <li className="item">
+            <Link to="#Ueber-Uns">Über uns</Link>
+          </li>
+          <li className="item">
+            <Link to="/karriere">Karriere</Link>
+          </li>
           <li className="toggle">
             <StaticImage
               src="../images/svg/hamburger.svg"

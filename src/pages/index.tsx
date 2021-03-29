@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
-import alarm from "../images/svg/alarm.svg"
+import alarm from "../images/svg/alarm2.svg"
 import construction from "../images/svg/construction.svg"
 import network from "../images/svg/network.svg"
 import smarthome from "../images/svg/smarthome.svg"
@@ -44,13 +44,33 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="content">
-      <h1>Leistungen</h1>
-      <img src={alarm} height="30px" />
-      <img src={construction} height="200px" />
-      <img src={network} height="200px" />
-      <img src={smarthome} height="200px" />
-      <img src={solar} height="200px" />
-      <StaticImage src="../images/knx.webp" alt="KNX"></StaticImage>
+      <h1 id="Leistungen">Leistungen</h1>
+      <div className="leistungen">
+        <figure>
+          <img src={construction} height="200px" />
+          <figcaption>Neubau, Altbau, Sanierung</figcaption>
+        </figure>
+        <figure>
+          <img src={smarthome} height="200px" />
+          <figcaption>Smart Home</figcaption>
+        </figure>
+        <figure>
+          <StaticImage src="../images/knx.webp" alt="KNX" height={200} className="knxImage"></StaticImage>
+          <figcaption>KNX</figcaption>
+        </figure>
+        <figure>
+          <img src={solar} height="200px" />
+          <figcaption>Solar</figcaption>
+        </figure>
+        <figure>
+          <img src={network} height="200px" />
+          <figcaption>Netzwerk</figcaption>
+        </figure>
+        <figure>
+          <img src={alarm} height="200px" />
+          <figcaption>Alarmanlagen</figcaption>
+        </figure>
+      </div>
     </div>
   </Layout>
 )

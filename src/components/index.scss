@@ -60,6 +60,18 @@ h1 {
   .titlePlaceholder {
     display: none;
   }
+
+  // Leistungen-Icons placement optimized
+  .leistungen > * {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .leistungen img,
+  .leistungen .knxImage {
+    width: 150px;
+    height: auto;
+  }
 }
 
 .whiteParagraph {
@@ -70,16 +82,15 @@ h1 {
   position: relative;
 }
 
-.cards {
+figcaption {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.leistungen {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: space-between;
-  padding: 10px;
-}
-
-.cards > * {
-  width: 250px;
-  margin: 5px;
 }
