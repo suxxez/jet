@@ -72,6 +72,7 @@ const Header = () => {
             <StaticImage
               src="../images/svg/hamburger.svg"
               alt="X"
+              loading="eager"
               className="hamburger"
             />
           </li>

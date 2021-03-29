@@ -7,6 +7,9 @@ html {
   font-family: "Open Sans";
   box-sizing: border-box;
   overflow-y: scroll;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
   background-image: url(../images/white-waves.png);
   background-repeat: repeat;
