@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "@fontsource/open-sans"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.scss"
 import "./index.scss"
 import { toggleDarkMode } from "../scripts/dark-mode"
@@ -42,16 +43,10 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        
       </div>
+      
+      <Footer></Footer>
     </>
   )
 }

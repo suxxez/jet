@@ -1,0 +1,17 @@
+.footerBgContainer {
+    width: 100%;
+    position:absolute; 
+    bottom:0;
+    z-index: -1;
+}
+
+.footerLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.footerLinksContainer > * {
+    margin: 0 1rem;
+}
