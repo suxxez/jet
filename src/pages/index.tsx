@@ -76,6 +76,7 @@ const IndexPage = () => (
           <figcaption>Alarmanlagen</figcaption>
         </figure>
       </div>
+      <p><b>und viele mehr</b></p>
       <h1 id="ueber-uns">Über uns</h1>
       <div className="personCardContainer">
         <div className="personCard">
@@ -118,6 +119,30 @@ const IndexPage = () => (
           src="../images/bild3.webp"
           alt="Außenbeleuchtung"
           height={250}
+        ></StaticImage>
+      </div>
+      <h1>Partner</h1>
+      <p>Gemeinsam mit unseren Partnern bieten wir Ihnen viele verschiedene Dienste kombiniert an.</p>
+      <div className="gallery">
+        <StaticImage
+          src="../images/leinkenjost.webp"
+          alt="Leinkenjost"
+          height={100}
+        ></StaticImage>
+        <StaticImage
+          src="../images/haustechnik.webp"
+          alt="Jakobi Haustechnik"
+          height={100}
+        ></StaticImage>
+        <StaticImage
+          src="../images/paderbad.webp"
+          alt="Paderbad"
+          height={100}
+        ></StaticImage>
+        <StaticImage
+          src="../images/enerix.webp"
+          alt="Enerix"
+          height={100}
         ></StaticImage>
       </div>
     </div>
