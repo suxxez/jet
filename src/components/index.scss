@@ -69,6 +69,20 @@ figcaption {
   justify-content: center;
 }
 
+.alarmDarkMode {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery > * {
+  margin: 5px 10px;
+}
+
 
 // special mobile rules
 @media (max-width: 767.98px) {
@@ -118,8 +132,4 @@ figcaption {
     width: 150px;
     height: auto;
   }
-}
-
-.alarmDarkMode {
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 }

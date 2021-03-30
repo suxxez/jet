@@ -103,6 +103,23 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
+      <div className="gallery">
+        <StaticImage
+          src="../images/bild1.webp"
+          alt="Treppenbeleuchtung"
+          height={250}
+        ></StaticImage>
+        <StaticImage
+          src="../images/bild2.webp"
+          alt="Smart Home"
+          height={250}
+        ></StaticImage>
+        <StaticImage
+          src="../images/bild3.webp"
+          alt="Außenbeleuchtung"
+          height={250}
+        ></StaticImage>
+      </div>
     </div>
   </Layout>
 )
