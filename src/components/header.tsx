@@ -13,13 +13,29 @@ const Header = () => {
     const menu = document.querySelector(".flexContainerHeader")
 
     let toggleMenu = () => {
+      console.log(menu?.classList.contains("active"));
+      
       if (menu?.classList.contains("active")) {
-        menu?.classList.remove("active")
+        closeMenu();
       } else {
-        menu?.classList.add("active")
+        openMenu()
       }
     }
     toggle?.addEventListener("click", toggleMenu, false)
+
+
+    const closeMenu = () => {
+      menu?.classList.remove("active");
+    }
+
+    const openMenu = () => {
+      menu?.classList.add("active");
+    }
+
+    const menuItems = document.querySelectorAll(".item");
+    menuItems.forEach(element => {
+      element.addEventListener("click", closeMenu)
+    });
   })
 
   return (
