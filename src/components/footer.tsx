@@ -15,7 +15,6 @@ const Footer = () => {
     <>
       <footer
         style={{
-          marginTop: ``,
           minHeight: "100px",
           position: "relative",
         }}
