@@ -51,11 +51,6 @@ export default function Datenschutz() {
           Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche
           Stelle zuständige Behörde.
         </p>
-        <p>
-          Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich)
-          mit Anschrift finden Sie unter:
-          https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.
-        </p>
         <h2>Erfassung allgemeiner Informationen beim Besuch unserer Website</h2>
         <h3>Art und Zweck der Verarbeitung:</h3>
         <p>

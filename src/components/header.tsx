@@ -5,38 +5,30 @@ import { StaticImage } from "gatsby-plugin-image"
 import { initiateHeaderScroll } from "../scripts/header-scroll"
 
 const Header = () => {
-  const elements = ["Leistungen", "Über uns", "Kontakt"]
 
   React.useEffect(() => {
     initiateHeaderScroll()
     const toggle = document.querySelector(".toggle")
-    const menu = document.querySelector(".flexContainerHeader")
-
+    
     let toggleMenu = () => {
-      console.log(menu?.classList.contains("active"));
+      let menu = document.querySelector(".flexContainerHeader")
+      console.log(menu);
+      
       
       if (menu?.classList.contains("active")) {
-        closeMenu();
+        menu?.classList.remove("active"); // close menu
       } else {
-        openMenu()
+        menu?.classList.add("active"); // open menu
       }
     }
+
     toggle?.addEventListener("click", toggleMenu, false)
-
-
-    const closeMenu = () => {
-      menu?.classList.remove("active");
-    }
-
-    const openMenu = () => {
-      menu?.classList.add("active");
-    }
 
     const menuItems = document.querySelectorAll(".item");
     menuItems.forEach(element => {
-      element.addEventListener("click", closeMenu)
+      element.addEventListener("click", toggleMenu)
     });
-  })
+  }, [])
 
   return (
     <header>
