@@ -45,7 +45,7 @@ const Header = () => {
                 src="../images/logo_elektrotechnik.webp"
                 alt="X"
                 loading="eager"
-                width={126}
+                width={128}
                 height={50}
               />
             </div>
@@ -54,7 +54,7 @@ const Header = () => {
                 src="../images/logo_white.webp"
                 alt="X"
                 loading="eager"
-                width={126}
+                width={128}
                 height={50}
               />
             </div>
