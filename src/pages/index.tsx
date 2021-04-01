@@ -12,7 +12,7 @@ import solar from "../images/svg/solar.svg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="JET" />
     <svg
       className="headingBlob"
       width="468"

@@ -58,9 +58,9 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `de`,
   meta: [],
-  description: ``,
+  description: `Ihr Ansprechpartner für Elektrotechnik im Münsterland.`,
 }
 
 SEO.propTypes = {

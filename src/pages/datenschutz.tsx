@@ -1,10 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default function Datenschutz() {
   return (
     <Layout>
+      <SEO title="Datenschutz" />
       <div className="datenschutz">
         <h1>Datenschutzerklärung</h1>
         <p>

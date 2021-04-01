@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Jakobi Elektrotechnik`,
     description: `Jakobi Elektrotechnik`,
+    url: "https://jakobi-elektrotechnik.de",
     author: `@finnfentker`,
   },
   plugins: [
