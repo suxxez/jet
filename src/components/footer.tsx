@@ -20,7 +20,7 @@ const Footer = () => {
         }}
       >
         <div className="footerLinksContainer">
-          <span>© {new Date().getFullYear()}</span>
+          <span className="copyright">© {new Date().getFullYear()}</span>
           <Link to="/impressum">Impressum</Link>
           <Link to="/datenschutz">Datenschutz</Link>
         </div>

@@ -47,11 +47,11 @@ const IndexPage = () => (
       <h1 id="leistungen">Leistungen</h1>
       <div className="leistungen">
         <figure>
-          <img src={construction} height="200px" />
+          <img src={construction} height="200px" alt="Neubau, Altbau, Sanierung" />
           <figcaption>Neubau, Altbau, Sanierung</figcaption>
         </figure>
         <figure>
-          <img src={smarthome} height="200px" />
+          <img src={smarthome} height="200px" alt="Smart Home" />
           <figcaption>Smart Home</figcaption>
         </figure>
         <figure>
@@ -64,15 +64,15 @@ const IndexPage = () => (
           <figcaption>KNX</figcaption>
         </figure>
         <figure>
-          <img src={solar} height="200px" />
+          <img src={solar} height="200px" alt="Solar" />
           <figcaption>Solar</figcaption>
         </figure>
         <figure>
-          <img src={network} height="200px" />
+          <img src={network} height="200px" alt="Netzwerk" />
           <figcaption>Netzwerk</figcaption>
         </figure>
         <figure id="alarmFigure">
-          <img src={alarm} height="200px" />
+          <img src={alarm} height="200px" alt="Alarmanlagen" />
           <figcaption>Alarmanlagen</figcaption>
         </figure>
       </div>

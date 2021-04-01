@@ -4,7 +4,7 @@ export const toggleDarkMode = () => {
     ?.classList.contains("htmlDarkMode")
 
   const html = document.querySelector("html")
-  const text = document.querySelectorAll("h1, h2, h3, p, figcaption, a")
+  const text = document.querySelectorAll("h1, h2, h3, p, figcaption, a, .copyright")
   const header = document.querySelector("header")
   const alarm = document.querySelector("#alarmFigure  img")
   const logo = document.querySelector(".logo_normal") as HTMLElement
