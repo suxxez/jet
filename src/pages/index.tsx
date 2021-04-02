@@ -85,7 +85,7 @@ const IndexPage = () => (
             alt="Frank"
             height={200}
           ></StaticImage>
-          <h3>Frank Steinheider</h3>
+          <h2>Frank Steinheider</h2>
           <p>
             +49 171 765 941 0<br />
             f.steinheider@jet.de
@@ -97,7 +97,7 @@ const IndexPage = () => (
             alt="Tobias"
             height={200}
           ></StaticImage>
-          <h3>Tobias Lander</h3>
+          <h2>Tobias Lander</h2>
           <p>
             +49 175 452 818 0<br />
             t.lander@jet.de
