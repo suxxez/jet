@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import jetVideo from "../videos/jet.mp4"
 
 import alarm from "../images/svg/alarm2.svg"
 import construction from "../images/svg/construction.svg"
@@ -32,22 +33,20 @@ const IndexPage = () => (
         Ihr Ansprechpartner für Elektrotechnik im Münsterland.
       </h1>
       <div className="videoWrapper">
-        <iframe
-          width="355"
-          height="200"
-          src="https://www.youtube-nocookie.com/embed/cw602cSBfZg?start=142"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <video controls width="355" height="200" preload="none">
+          <source src={jetVideo} type="video/mp4" />
+        </video>
       </div>
     </div>
     <div className="content">
       <h1 id="leistungen">Leistungen</h1>
       <div className="leistungen">
         <figure>
-          <img src={construction} height="200px" alt="Neubau, Altbau, Sanierung" />
+          <img
+            src={construction}
+            height="200px"
+            alt="Neubau, Altbau, Sanierung"
+          />
           <figcaption>Neubau, Altbau, Sanierung</figcaption>
         </figure>
         <figure>
@@ -76,7 +75,9 @@ const IndexPage = () => (
           <figcaption>Alarmanlagen</figcaption>
         </figure>
       </div>
-      <p><b>und viele mehr</b></p>
+      <p>
+        <b>und viele mehr</b>
+      </p>
       <h1 id="ueber-uns">Über uns</h1>
       <div className="personCardContainer">
         <div className="personCard">
@@ -122,7 +123,10 @@ const IndexPage = () => (
         ></StaticImage>
       </div>
       <h1>Partner</h1>
-      <p>Gemeinsam mit unseren Partnern bieten wir Ihnen viele verschiedene Dienste kombiniert an.</p>
+      <p>
+        Gemeinsam mit unseren Partnern bieten wir Ihnen viele verschiedene
+        Dienste kombiniert an.
+      </p>
       <div className="gallery">
         <StaticImage
           src="../images/leinkenjost.webp"
