@@ -83,6 +83,9 @@ figcaption {
   margin: 5px 10px;
 }
 
+.personCard h2 {
+  font-size: 1rem;
+}
 
 // special mobile rules
 @media (max-width: 767.98px) {
@@ -130,6 +133,3 @@ figcaption {
   }
 }
 
-.personCard h2 {
-  font-size: 0.5rem;
-}
