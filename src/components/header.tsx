@@ -53,7 +53,7 @@ const Header = () => {
               <StaticImage
                 src="../images/logo_white.webp"
                 alt="Logo"
-                loading="eager"
+                loading="lazy"
                 width={128}
                 height={50}
               />
