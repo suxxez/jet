@@ -43,8 +43,8 @@ const Header = () => {
             <div className="logo_normal">
               <StaticImage
                 src="../images/logo_elektrotechnik.webp"
-                alt="X"
-                loading="eager"
+                alt="Logo"
+                loading="lazy"
                 width={128}
                 height={50}
               />
@@ -52,20 +52,13 @@ const Header = () => {
             <div className="logo_white">
               <StaticImage
                 src="../images/logo_white.webp"
-                alt="X"
+                alt="Logo"
                 loading="eager"
                 width={128}
                 height={50}
               />
             </div>
           </li>
-          {/* {elements.map((value, index) => {
-            return (
-              <li className="item" key={index}>
-                <Link to="#{Value}">{value}</Link>
-              </li>
-            )
-          })} */}
           <li className="item">
             <Link to="/#leistungen">Leistungen</Link>
           </li>
@@ -77,12 +70,6 @@ const Header = () => {
           </li>
           <li className="toggle">
             <img src={hamburger} alt="Menu" className="hamburger" />
-            {/* <StaticImage
-              src="../images/svg/hamburger.svg"
-              alt="X"
-              loading="eager"
-              className="hamburger"
-            /> */}
           </li>
         </ul>
       </div>

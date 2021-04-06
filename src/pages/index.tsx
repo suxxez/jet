@@ -122,7 +122,7 @@ const IndexPage = () => (
           height={250}
         ></StaticImage>
       </div>
-      <h1>Partner</h1>
+      <h1 id="partner">Partner</h1>
       <p>
         Gemeinsam mit unseren Partnern bieten wir Ihnen viele verschiedene
         Dienste kombiniert an.
