@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
   `)
 
   React.useEffect(() => {
-    const logo = document.querySelector(".logo") as HTMLElement
-    logo.addEventListener("click", toggleDarkMode)
+    const smartHomeLogo = document.getElementById("smartHomeLogo") as HTMLElement
+    smartHomeLogo?.addEventListener("click", toggleDarkMode)
   })
 
   return (

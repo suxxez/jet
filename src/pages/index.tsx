@@ -50,7 +50,7 @@ const IndexPage = () => (
           <figcaption>Neubau, Altbau, Sanierung</figcaption>
         </figure>
         <figure>
-          <img src={smarthome} height="200px" alt="Smart Home" />
+          <img src={smarthome} height="200px" alt="Smart Home" id="smartHomeLogo" />
           <figcaption>Smart Home</figcaption>
         </figure>
         <figure>

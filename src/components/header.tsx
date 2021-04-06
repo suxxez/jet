@@ -40,24 +40,26 @@ const Header = () => {
       >
         <ul className="navigationBar">
           <li className="logo">
-            <div className="logo_normal">
-              <StaticImage
-                src="../images/logo_elektrotechnik.webp"
-                alt="Logo"
-                loading="lazy"
-                width={128}
-                height={50}
-              />
-            </div>
-            <div className="logo_white">
-              <StaticImage
-                src="../images/logo_white.webp"
-                alt="Logo"
-                loading="lazy"
-                width={128}
-                height={50}
-              />
-            </div>
+            <Link to="/">
+              <div className="logo_normal">
+                <StaticImage
+                  src="../images/logo_elektrotechnik.webp"
+                  alt="Logo"
+                  loading="lazy"
+                  width={128}
+                  height={50}
+                />
+              </div>
+              <div className="logo_white">
+                <StaticImage
+                  src="../images/logo_white.webp"
+                  alt="Logo"
+                  loading="lazy"
+                  width={128}
+                  height={50}
+                />
+              </div>
+            </Link>
           </li>
           <li className="item">
             <Link to="/#leistungen">Leistungen</Link>
