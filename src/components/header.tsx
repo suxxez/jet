@@ -3,30 +3,30 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { initiateHeaderScroll } from "../scripts/header-scroll"
 
-const Header = () => {
+import hamburger from "../images/svg/hamburger.svg"
 
+const Header = () => {
   React.useEffect(() => {
     initiateHeaderScroll()
     const toggle = document.querySelector(".toggle")
-    
+
     let toggleMenu = () => {
       let menu = document.querySelector(".flexContainerHeader")
-      console.log(menu);
-      
-      
+      console.log(menu)
+
       if (menu?.classList.contains("active")) {
-        menu?.classList.remove("active"); // close menu
+        menu?.classList.remove("active") // close menu
       } else {
-        menu?.classList.add("active"); // open menu
+        menu?.classList.add("active") // open menu
       }
     }
 
     toggle?.addEventListener("click", toggleMenu, false)
 
-    const menuItems = document.querySelectorAll(".item");
+    const menuItems = document.querySelectorAll(".item")
     menuItems.forEach(element => {
       element.addEventListener("click", toggleMenu)
-    });
+    })
   }, [])
 
   return (
@@ -76,12 +76,13 @@ const Header = () => {
             <Link to="/karriere">Karriere</Link>
           </li>
           <li className="toggle">
-            <StaticImage
+            <img src={hamburger} alt="Menu" className="hamburger" />
+            {/* <StaticImage
               src="../images/svg/hamburger.svg"
               alt="X"
               loading="eager"
               className="hamburger"
-            />
+            /> */}
           </li>
         </ul>
       </div>
