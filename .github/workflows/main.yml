@@ -39,6 +39,7 @@ jobs:
       
       - name: Sign into sftp and upload
         run: |
+          #!/usr/bin/expect -f
           spawn sftp -P 23 ${{ secrets.FTP_USER }}@fentker.com
           expect "password:"
           send "${{ secrets.FTP_PASSWORD }}"
