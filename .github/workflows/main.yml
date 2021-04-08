@@ -33,17 +33,10 @@ jobs:
         
       - name: Build
         run: gatsby build && cd public
-        
-      - name: Sign into sftp
-        env:
-          USER: ${{ secrets.FTP_USER }}
-          PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      
+      - name: Sign into sftp and upload
         run: |
-          sftp -P 23 $USER@fentker.com
-          $PASSWORD
-          cd web
-          rm -rf jet && mkdir jet && cd jet
-          put -r .
+          sftp -P 23 ${{ secrets.FTP_USER }}@fentker.com <<< $'${{ secrets.FTP_PASSWORD }} \n cd web \n rm -rf jet && mkdir jet && cd jet \n put -r .'
           
 
               
