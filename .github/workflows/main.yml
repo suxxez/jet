@@ -32,7 +32,7 @@ jobs:
         run: npm install -g gatsby-cli@3.2.0
         
       - name: Build
-        run: gatsby build && cd build
+        run: gatsby build && cd public
         
       - name: Sign into sftp
         env:
@@ -43,7 +43,6 @@ jobs:
           $PASSWORD
           cd web
           rm -rf jet && mkdir jet && cd jet
-          lcd public
           put -r .
           
 
