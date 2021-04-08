@@ -1,8 +1,8 @@
 #!/usr/bin/expect -f
 
-spawn sftp -P 23 ${{ secrets.FTP_USER }}@fentker.com
+spawn sftp -P 23 $env(USER)@fentker.com
 expect "password:"
-send "${{ secrets.FTP_PASSWORD }}"
+send "$env(PASS)"
 expect "sftp>"
 send "cd web && rm -rf jet && mkdir jet && cd jet && put -r"
 expect "sftp>"
