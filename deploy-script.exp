@@ -1,6 +1,8 @@
 #!/usr/bin/expect -f
 
 spawn sftp -P 23 $env(USER)@fentker.com
+expect "Are you sure you want to continue connecting (yes/no/[fingerprint])?"
+send "yes"
 expect "password:"
 send "$env(PASS)"
 expect "sftp>"
