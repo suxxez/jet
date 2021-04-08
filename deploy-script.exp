@@ -4,9 +4,9 @@ spawn sftp -P 23 $env(USER)@fentker.com
 expect {Are you sure you want to continue connecting (yes/no/[fingerprint])?}
 send "yes\r"
 expect "$env(USER)@fentker.com's password:"
-send "$env(PASS)"
+send "$env(PASS)\r"
 expect "sftp>"
-send "cd web && rm -rf jet && mkdir jet && cd jet && put -r"
+send "cd web && rm -rf jet && mkdir jet && cd jet && put -r \r"
 expect "sftp>"
 send "exit\n"        
 interact
