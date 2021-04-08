@@ -35,9 +35,12 @@ jobs:
         run: gatsby build && cd build
         
       - name: Sign into sftp
+        env:
+          USER: ${{ secrets.FTP_USER }}
+          PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          sftp -P 23 ${{ FTP_USER }}@fentker.com
-          ${{ FTP_PASSWORD }}
+          sftp -P 23 $USER@fentker.com
+          $PASSWORD
           cd web
           rm -rf jet && mkdir jet && cd jet
           lcd public
