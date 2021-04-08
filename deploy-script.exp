@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+
+spawn sftp -P 23 ${{ secrets.FTP_USER }}@fentker.com
+expect "password:"
+send "${{ secrets.FTP_PASSWORD }}"
+expect "sftp>"
+send "cd web && rm -rf jet && mkdir jet && cd jet && put -r"
+expect "sftp>"
+send "exit\n"        
+interact
