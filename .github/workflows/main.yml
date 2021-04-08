@@ -24,6 +24,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+          
+      - name: Install expect
+        run: sudo apt-get install expect
       
       - name: Install Project Dependencies
         run: npm ci
@@ -36,7 +39,11 @@ jobs:
       
       - name: Sign into sftp and upload
         run: |
-          sftp -P 23 ${{ secrets.FTP_USER }}@fentker.com <<< $'${{ secrets.FTP_PASSWORD }} \n cd web \n rm -rf jet && mkdir jet && cd jet \n put -r .'
-          
-
-              
+          spawn sftp -P 23 ${{ secrets.FTP_USER }}@fentker.com
+          expect "password:"
+          send "${{ secrets.FTP_PASSWORD }}"
+          expect "sftp>"
+          send "cd web && rm -rf jet && mkdir jet && cd jet && put -r"
+          expect "sftp>"
+          send "exit\n"        
+          interact
