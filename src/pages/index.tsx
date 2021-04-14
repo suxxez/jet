@@ -50,7 +50,12 @@ const IndexPage = () => (
           <figcaption>Neubau, Altbau, Sanierung</figcaption>
         </figure>
         <figure>
-          <img src={smarthome} height="200px" alt="Smart Home" id="smartHomeLogo" />
+          <img
+            src={smarthome}
+            height="200px"
+            alt="Smart Home"
+            id="smartHomeLogo"
+          />
           <figcaption>Smart Home</figcaption>
         </figure>
         <figure>
@@ -89,7 +94,7 @@ const IndexPage = () => (
           <h2>Frank Steinheider</h2>
           <p>
             +49 171 765 941 0<br />
-            f.steinheider@jet.de
+            f.steinheider@jakobi-elektrotechnik.de
           </p>
         </div>
         <div className="personCard">
@@ -101,7 +106,7 @@ const IndexPage = () => (
           <h2>Tobias Lander</h2>
           <p>
             +49 175 452 818 0<br />
-            t.lander@jet.de
+            t.lander@jakobi-elektrotechnik.de
           </p>
         </div>
       </div>
@@ -128,26 +133,34 @@ const IndexPage = () => (
         Dienste kombiniert an.
       </p>
       <div className="gallery">
-        <StaticImage
-          src="../images/leinkenjost.webp"
-          alt="Leinkenjost"
-          height={100}
-        ></StaticImage>
-        <StaticImage
-          src="../images/haustechnik.webp"
-          alt="Jakobi Haustechnik"
-          height={100}
-        ></StaticImage>
-        <StaticImage
-          src="../images/paderbad.webp"
-          alt="Paderbad"
-          height={100}
-        ></StaticImage>
-        <StaticImage
-          src="../images/enerix.webp"
-          alt="Enerix"
-          height={100}
-        ></StaticImage>
+        <a href="https://brandschutz-ostbevern.de/">
+          <StaticImage
+            src="../images/leinkenjost.webp"
+            alt="Leinkenjost"
+            height={100}
+          ></StaticImage>
+        </a>
+        <a href="https://www.jakobi-haustechnik.de/">
+          <StaticImage
+            src="../images/haustechnik.webp"
+            alt="Jakobi Haustechnik"
+            height={100}
+          ></StaticImage>
+        </a>
+        <a href="https://www.paderbad.de/">
+          <StaticImage
+            src="../images/paderbad.webp"
+            alt="Paderbad"
+            height={100}
+          ></StaticImage>
+        </a>
+        <a href="https://www.enerix.de/photovoltaik/warendorf/">
+          <StaticImage
+            src="../images/enerix.webp"
+            alt="Enerix"
+            height={100}
+          ></StaticImage>
+        </a>
       </div>
     </div>
   </Layout>
