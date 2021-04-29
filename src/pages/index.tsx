@@ -16,6 +16,9 @@ import cursor from "../images/svg/cursor.svg"
 const IndexPage = () => (
   <Layout>
     <SEO title="JET" />
+
+    {/* ------- HEADING SECTION ------- */}
+
     <div className="headingContainer">
       <StaticImage
         src="../images/logo_elektrotechnik.webp"
@@ -30,7 +33,10 @@ const IndexPage = () => (
         </video>
       </div>
     </div>
+
     <div className="content">
+      {/* ------- DARK MODE SECTION ------- */}
+
       <div className="darkModeSection">
         <p>
           <b>
@@ -51,7 +57,7 @@ const IndexPage = () => (
             <StaticImage
               src="../images/lampe_off.webp"
               alt="Lampe"
-              loading="lazy"
+              loading="eager"
               width={200}
             />
           </div>
@@ -62,51 +68,9 @@ const IndexPage = () => (
         </p>
       </div>
 
-      <h1 id="leistungen">Leistungen</h1>
-      <div className="leistungen">
-        <figure>
-          <img
-            src={construction}
-            height="200px"
-            alt="Neubau, Altbau, Sanierung"
-          />
-          <figcaption>Neubau, Altbau, Sanierung</figcaption>
-        </figure>
-        <figure>
-          <img
-            src={smarthome}
-            height="200px"
-            alt="Smart Home"
-            id="smartHomeLogo"
-          />
-          <figcaption>Smart Home</figcaption>
-        </figure>
-        <figure>
-          <StaticImage
-            src="../images/knx.webp"
-            alt="KNX"
-            height={200}
-            className="knxImage"
-          ></StaticImage>
-          <figcaption>KNX</figcaption>
-        </figure>
-        <figure>
-          <img src={solar} height="200px" alt="Solar" />
-          <figcaption>Solar</figcaption>
-        </figure>
-        <figure>
-          <img src={network} height="200px" alt="Netzwerk" />
-          <figcaption>Netzwerk</figcaption>
-        </figure>
-        <figure id="alarmFigure">
-          <img src={alarm} height="200px" alt="Alarmanlagen" />
-          <figcaption>Alarmanlagen</figcaption>
-        </figure>
-      </div>
-      <p>
-        <b>und viele mehr</b>
-      </p>
-      <h1 id="ueber-uns">Über uns</h1>
+      {/* ------- ANSPRECHPARTNER SECTION ------- */}
+
+      <h1 id="ueber-uns">Deine Ansprechpartner</h1>
       <div className="personCardContainer">
         <div className="personCard">
           <StaticImage
@@ -150,38 +114,88 @@ const IndexPage = () => (
           height={250}
         ></StaticImage>
       </div>
-      <h1 id="partner">Partner</h1>
+
+      {/* ------- LEISTUNGEN SECTION ------- */}
+
+      <h1 id="leistungen">Unsere Leistungen</h1>
+      <div className="leistungen">
+        <figure>
+          <img
+            src={construction}
+            height="200px"
+            alt="Neubau, Altbau, Sanierung"
+          />
+          <figcaption>Neubau, Altbau, Sanierung</figcaption>
+        </figure>
+        <figure>
+          <img
+            src={smarthome}
+            height="200px"
+            alt="Smart Home"
+            id="smartHomeLogo"
+          />
+          <figcaption>Smart Home</figcaption>
+        </figure>
+        <figure>
+          <StaticImage
+            src="../images/knx.webp"
+            alt="KNX"
+            height={200}
+            className="knxImage"
+          ></StaticImage>
+          <figcaption>KNX</figcaption>
+        </figure>
+        <figure>
+          <img src={solar} height="200px" alt="Solar" />
+          <figcaption>Solar</figcaption>
+        </figure>
+        <figure>
+          <img src={network} height="200px" alt="Netzwerk" />
+          <figcaption>Netzwerk</figcaption>
+        </figure>
+        <figure id="alarmFigure">
+          <img src={alarm} height="200px" alt="Alarmanlagen" />
+          <figcaption>Alarmanlagen</figcaption>
+        </figure>
+      </div>
+      <p>
+        <b>und viele mehr</b>
+      </p>
+
+      {/* ------- PARTNER SECTION ------- */}
+
+      <h1 id="partner">Unsere Partner</h1>
       <p>
         Gemeinsam mit unseren Partnern bieten wir Ihnen viele verschiedene
         Dienste kombiniert an.
       </p>
       <div className="gallery">
-        <a href="https://brandschutz-ostbevern.de/">
-          <StaticImage
-            src="../images/leinkenjost.webp"
-            alt="Leinkenjost"
-            height={100}
-          ></StaticImage>
-        </a>
         <a href="https://www.jakobi-haustechnik.de/">
           <StaticImage
             src="../images/haustechnik.webp"
             alt="Jakobi Haustechnik"
-            height={100}
+            height={70}
           ></StaticImage>
         </a>
         <a href="https://www.paderbad.de/">
           <StaticImage
             src="../images/paderbad.webp"
             alt="Paderbad"
-            height={100}
+            height={70}
+          ></StaticImage>
+        </a>
+        <a href="https://brandschutz-ostbevern.de/">
+          <StaticImage
+            src="../images/leinkenjost.webp"
+            alt="Leinkenjost"
+            height={70}
           ></StaticImage>
         </a>
         <a href="https://www.enerix.de/photovoltaik/warendorf/">
           <StaticImage
             src="../images/enerix.webp"
             alt="Enerix"
-            height={100}
+            height={70}
           ></StaticImage>
         </a>
       </div>
