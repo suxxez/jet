@@ -11,6 +11,8 @@ import network from "../images/svg/network.svg"
 import smarthome from "../images/svg/smarthome.svg"
 import solar from "../images/svg/solar.svg"
 
+import cursor from "../images/svg/cursor.svg"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="JET" />
@@ -29,6 +31,37 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="content">
+      <div className="darkModeSection">
+        <p>
+          <b>
+            Wir möchten Dich für alle Möglichkeiten der Elektrotechnik
+            begeistern...
+          </b>
+        </p>
+        <div id="darkModeToggle">
+          <div className="lampe_on">
+            <StaticImage
+              src="../images/lampe_on.webp"
+              alt="Lampe"
+              loading="lazy"
+              width={200}
+            />
+          </div>
+          <div className="lampe_off">
+            <StaticImage
+              src="../images/lampe_off.webp"
+              alt="Lampe"
+              loading="lazy"
+              width={200}
+            />
+          </div>
+          <img src={cursor} id="cursor" height="40px" alt="Cursor" />
+        </div>
+        <p>
+          <b>... und lassen Dich nicht im Dunkeln.</b>
+        </p>
+      </div>
+
       <h1 id="leistungen">Leistungen</h1>
       <div className="leistungen">
         <figure>

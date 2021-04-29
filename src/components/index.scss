@@ -12,13 +12,6 @@
   width: 50%;
 }
 
-.headingBlob {
-  position: absolute;
-  background-image: url(../images/svg/blob.svg);
-  background-repeat: no-repeat;
-  top: 15vh;
-}
-
 .videoWrapper video {
   display: block;
   margin: auto;
@@ -83,6 +76,27 @@ figcaption {
 
 .personCard h2 {
   font-size: 1.5rem;
+}
+
+.darkModeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#darkModeToggle {
+  cursor: pointer;
+  position: relative;
+}
+
+#darkModeToggle #cursor {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
+
+.lampe_off {
+  display: none;
 }
 
 #ueber-uns, #partner {

@@ -10,6 +10,8 @@ export const toggleDarkMode = () => {
   const logo = document.querySelector(".logo_normal") as HTMLElement
   const logo_white = document.querySelector(".logo_white") as HTMLElement
   const menu_items = document.querySelectorAll(".item")
+  const lampe_on = document.querySelector(".lampe_on") as HTMLElement
+  const lampe_off = document.querySelector(".lampe_off") as HTMLElement
 
   if (!darkModeActive) {
     html?.classList.add("htmlDarkMode")
@@ -23,8 +25,10 @@ export const toggleDarkMode = () => {
     alarm?.classList.add("alarmDarkMode")
 
     logo.style.display = "none"
-
     logo_white.style.display = "block"
+
+    lampe_on.style.display = "none"
+    lampe_off.style.display = "block"
 
     menu_items.forEach(element => {
       element.classList.add("itemDarkMode")
@@ -41,8 +45,10 @@ export const toggleDarkMode = () => {
     alarm?.classList.remove("alarmDarkMode")
 
     logo.style.display = "block"
-
     logo_white.style.display = "none"
+
+    lampe_on.style.display = "block"
+    lampe_off.style.display = "none"
 
     menu_items.forEach(element => {
       element.classList.remove("itemDarkMode")
