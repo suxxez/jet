@@ -21,8 +21,11 @@ const Layout = ({ children }) => {
   `)
 
   React.useEffect(() => {
+    // if dark mode has previously been toggled, it gets toggled again
+    toggleDarkMode(true);
+  
     const toggle = document.getElementById("darkModeToggle") as HTMLElement
-    toggle?.addEventListener("click", toggleDarkMode)
+    toggle?.addEventListener("click", () => { toggleDarkMode() })
   })
 
   return (
