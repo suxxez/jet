@@ -108,6 +108,16 @@ figcaption {
   margin-top: 3rem;
 }
 
+.segel {
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.email-link {
+  text-decoration: underline;
+}
+
 // special mobile rules
 @media (max-width: 767.98px) {
   .mainHeading {
@@ -143,6 +153,10 @@ figcaption {
   .leistungen .knxImage {
     width: 150px;
     height: auto;
+  }
+
+  .segel {
+    left: -300px;
   }
 }
 
