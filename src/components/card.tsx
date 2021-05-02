@@ -10,18 +10,16 @@ type CardProps = {
   text?: string
 }
 
-const Card = ({ imageSrc, heading }: CardProps) => {
+const Card = ({ imageSrc, heading, text }: CardProps) => {
   return (
     <>
       <div className="cardContent">
-        <h2>{heading}</h2>
+        
         <div className="cardImageWrapper">
           <Image src={imageSrc}></Image>
         </div>
-        <p>
-          In unseren Büros beraten wir Sie gerne und finden die beste Lösung für
-          Ihre Anforderungen und Wünsche.
-        </p>
+        <h3>{heading}</h3>
+        { (text) && <p>{text}</p>}
       </div>
     </>
   )

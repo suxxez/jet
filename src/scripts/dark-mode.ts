@@ -1,3 +1,5 @@
+import { element } from "prop-types"
+
 export const toggleDarkMode = (forceDarkMode?) => {
   const darkModeActive = document
     .querySelector("html")
@@ -15,6 +17,8 @@ export const toggleDarkMode = (forceDarkMode?) => {
   const lampe_on = document.querySelector(".lampe_on") as HTMLElement
   const lampe_off = document.querySelector(".lampe_off") as HTMLElement
 
+  const cards = document.querySelectorAll(".cardContent")
+
   if ((!darkModeActive && !forceDarkMode)  || (darkModeActive && forceDarkMode)) {
     html?.classList.add("htmlDarkMode")
     text.forEach(element => {
@@ -31,6 +35,10 @@ export const toggleDarkMode = (forceDarkMode?) => {
     menu_items.forEach(element => {
       element?.classList.add("itemDarkMode")
     })
+
+    cards.forEach(element => {
+      (element as HTMLElement).style.background = "transparent"
+    } )
   } else if (darkModeActive) {
     html?.classList.remove("htmlDarkMode")
     text.forEach(element => {
@@ -47,5 +55,8 @@ export const toggleDarkMode = (forceDarkMode?) => {
     menu_items.forEach(element => {
       element.classList.remove("itemDarkMode")
     })
+    cards.forEach(element => {
+      (element as HTMLElement).style.background = "white"
+    } )
   }
 }

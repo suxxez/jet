@@ -12,6 +12,7 @@ import smarthome from "../images/svg/smarthome.svg"
 import solar from "../images/svg/solar.svg"
 
 import cursor from "../images/svg/cursor.svg"
+import Card from "../components/card"
 
 const IndexPage = () => (
   <Layout>
@@ -97,66 +98,18 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
-      <div className="gallery">
-        <StaticImage
-          src="../images/bild1.webp"
-          alt="Treppenbeleuchtung"
-          height={250}
-        ></StaticImage>
-        <StaticImage
-          src="../images/bild2.webp"
-          alt="Smart Home"
-          height={250}
-        ></StaticImage>
-        <StaticImage
-          src="../images/bild3.webp"
-          alt="Außenbeleuchtung"
-          height={250}
-        ></StaticImage>
-      </div>
 
       {/* ------- LEISTUNGEN SECTION ------- */}
 
       <h1 id="leistungen">Unsere Leistungen</h1>
-      <div className="leistungen">
-        <figure>
-          <img
-            src={construction}
-            height="200px"
-            alt="Neubau, Altbau, Sanierung"
-          />
-          <figcaption>Neubau, Altbau, Sanierung</figcaption>
-        </figure>
-        <figure>
-          <img
-            src={smarthome}
-            height="200px"
-            alt="Smart Home"
-            id="smartHomeLogo"
-          />
-          <figcaption>Smart Home</figcaption>
-        </figure>
-        <figure>
-          <StaticImage
-            src="../images/knx.webp"
-            alt="KNX"
-            height={200}
-            className="knxImage"
-          ></StaticImage>
-          <figcaption>KNX</figcaption>
-        </figure>
-        <figure>
-          <img src={solar} height="200px" alt="Solar" />
-          <figcaption>Solar</figcaption>
-        </figure>
-        <figure>
-          <img src={network} height="200px" alt="Netzwerk" />
-          <figcaption>Netzwerk</figcaption>
-        </figure>
-        <figure id="alarmFigure">
-          <img src={alarm} height="200px" alt="Alarmanlagen" />
-          <figcaption>Alarmanlagen</figcaption>
-        </figure>
+
+      <div className="gallery leistungen">
+        <Card imageSrc="neubau.webp" heading="Neubau, Altbau, Sanierung"></Card>
+        <Card imageSrc="smarthome.webp" heading="Smart Home"></Card>
+        <Card imageSrc="knx.webp" heading="KNX"></Card>
+        <Card imageSrc="solar.webp" heading="Solar"></Card>
+        <Card imageSrc="netzwerk.webp" heading="Netzwerk"></Card>
+        <Card imageSrc="alarm.webp" heading="Alarmanlagen"></Card>
       </div>
       <p>
         <b>und viele mehr</b>
