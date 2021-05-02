@@ -18,7 +18,7 @@ const Card = ({ imageSrc, heading, text }: CardProps) => {
         <div className="cardImageWrapper">
           <Image src={imageSrc}></Image>
         </div>
-        <h3>{heading}</h3>
+        <p><b>{heading}</b></p>
         { (text) && <p>{text}</p>}
       </div>
     </>

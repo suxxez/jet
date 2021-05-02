@@ -92,7 +92,7 @@ const IndexPage = () => (
           ></StaticImage>
           <h2>Frank Steinheider</h2>
           <p>
-            <a href="tel:+491717659410">+49 171 765 941 0</a><br />
+            <a href="tel:+491717659410">+49 171 765 941 0</a><br /><br />
             <a href="mailto:f.steinheider@jakobi-elektrotechnik.de" className="email-link">f.steinheider@jakobi-elektrotechnik.de</a>
           </p>
         </div>
@@ -104,7 +104,7 @@ const IndexPage = () => (
           ></StaticImage>
           <h2>Tobias Lander</h2>
           <p>
-            <a href="tel:+491754528180"> +49 175 452 818 0 </a><br />
+            <a href="tel:+491754528180"> +49 175 452 818 0 </a><br /><br />
             <a href="mailto:t.lander@jakobi-elektrotechnik.de" className="email-link">t.lander@jakobi-elektrotechnik.de</a>
           </p>
         </div>
