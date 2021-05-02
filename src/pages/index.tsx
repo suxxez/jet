@@ -92,7 +92,7 @@ const IndexPage = () => (
           ></StaticImage>
           <h2>Frank Steinheider</h2>
           <p>
-            <a href="+491717659410">+49 171 765 941 0</a><br />
+            <a href="tel:+491717659410">+49 171 765 941 0</a><br />
             <a href="mailto:f.steinheider@jakobi-elektrotechnik.de" className="email-link">f.steinheider@jakobi-elektrotechnik.de</a>
           </p>
         </div>
