@@ -11,23 +11,32 @@ export const toggleDarkMode = (forceDarkMode?) => {
   )
   const header = document.querySelector("header")
   const alarm = document.querySelector("#alarmFigure  img")
-  const logo = document.querySelector(".logo_normal") as HTMLElement
-  const logo_white = document.querySelector(".logo_white") as HTMLElement
+  const logos = document.querySelectorAll(".logo_normal")
+  const logos_white = document.querySelectorAll(".logo_white")
   const menu_items = document.querySelectorAll(".item")
   const lampe_on = document.querySelector(".lampe_on") as HTMLElement
   const lampe_off = document.querySelector(".lampe_off") as HTMLElement
 
   const cards = document.querySelectorAll(".cardContent")
 
-  if ((!darkModeActive && !forceDarkMode)  || (darkModeActive && forceDarkMode)) {
+  if (
+    (!darkModeActive && !forceDarkMode) ||
+    (darkModeActive && forceDarkMode)
+  ) {
     html?.classList.add("htmlDarkMode")
     text.forEach(element => {
       element?.classList.add("textDarkMode")
     })
     header?.classList.add("headerDarkMode")
     alarm?.classList.add("alarmDarkMode")
-    logo.style.display = "none"
-    logo_white.style.display = "block"
+
+    logos.forEach(logo => {
+      (logo as HTMLElement).style.display = "none"
+    })
+    logos_white.forEach(logo => {
+      (logo as HTMLElement).style.display = "block"
+    })
+
     if (lampe_on && lampe_off) {
       lampe_on.style.display = "none"
       lampe_off.style.display = "block"
@@ -37,8 +46,8 @@ export const toggleDarkMode = (forceDarkMode?) => {
     })
 
     cards.forEach(element => {
-      (element as HTMLElement).style.background = "transparent"
-    } )
+      ;(element as HTMLElement).style.background = "transparent"
+    })
   } else if (darkModeActive) {
     html?.classList.remove("htmlDarkMode")
     text.forEach(element => {
@@ -46,8 +55,14 @@ export const toggleDarkMode = (forceDarkMode?) => {
     })
     header?.classList.remove("headerDarkMode")
     alarm?.classList.remove("alarmDarkMode")
-    logo.style.display = "block"
-    logo_white.style.display = "none"
+
+    logos.forEach(logo => {
+      (logo as HTMLElement).style.display = "block"
+    })
+    logos_white.forEach(logo => {
+      (logo as HTMLElement).style.display = "none"
+    })
+
     if (lampe_on && lampe_off) {
       lampe_on.style.display = "block"
       lampe_off.style.display = "none"
@@ -56,7 +71,7 @@ export const toggleDarkMode = (forceDarkMode?) => {
       element.classList.remove("itemDarkMode")
     })
     cards.forEach(element => {
-      (element as HTMLElement).style.background = "white"
-    } )
+      ;(element as HTMLElement).style.background = "white"
+    })
   }
 }

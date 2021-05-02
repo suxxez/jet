@@ -21,12 +21,22 @@ const IndexPage = () => (
     {/* ------- HEADING SECTION ------- */}
 
     <div className="headingContainer">
-      <StaticImage
-        src="../images/logo_elektrotechnik.webp"
-        alt="Logo"
-        loading="lazy"
-        width={500}
-      />
+      <div className="logo_normal">
+        <StaticImage
+          src="../images/logo_elektrotechnik.webp"
+          alt="Logo"
+          loading="lazy"
+          width={500}
+        />
+      </div>
+      <div className="logo_white">
+        <StaticImage
+          src="../images/logo_white.webp"
+          alt="Logo"
+          loading="lazy"
+          width={500}
+        />
+      </div>
       <h1 className="mainHeading">Mach mehr aus Deiner Elektroinstallation.</h1>
       <div className="videoWrapper">
         <video controls width="400" /* preload="none" */>
