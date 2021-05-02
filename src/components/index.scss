@@ -118,6 +118,21 @@ figcaption {
   text-decoration: underline;
 }
 
+.instagram-link {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.facebook-link {
+  background: linear-gradient(120DEG, #3B5998, #A0A0A0);
+}
+
+.instagram-link, .facebook-link {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
 // special mobile rules
 @media (max-width: 767.98px) {
   .mainHeading {

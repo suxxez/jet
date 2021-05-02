@@ -123,39 +123,44 @@ const IndexPage = () => (
         <Card imageSrc="alarm.webp" heading="Alarmanlagen"></Card>
       </div>
       <p>
-        <b>und viele mehr</b>
+        <b>und vieles mehr</b>
+      </p>
+      <p>
+        Schau für weitere Eindrücke und Aktuelles gerne auf  
+        <a target="_blank" href="https://www.instagram.com/jakobi_elektrotechnik/" className="instagram-link" rel="noopener noreferrer"> Instagram</a> oder 
+        <a target="_blank" href="https://www.facebook.com/Jakobi-Elektrotechnik-313162799360602" className="facebook-link" rel="noopener noreferrer"> Facebook</a> vorbei!
       </p>
 
       {/* ------- PARTNER SECTION ------- */}
 
       <h1 id="partner">Unsere Partner</h1>
       <p>
-        Gemeinsam mit unseren Partnern bieten wir Ihnen viele verschiedene
+        Gemeinsam mit unseren Partnern bieten wir viele verschiedene
         Dienste kombiniert an.
       </p>
       <div className="gallery">
-        <a href="https://www.jakobi-haustechnik.de/">
+        <a target="_blank" href="https://www.jakobi-haustechnik.de/" rel="noopener noreferrer">
           <StaticImage
             src="../images/haustechnik.webp"
             alt="Jakobi Haustechnik"
             height={70}
           ></StaticImage>
         </a>
-        <a href="https://www.paderbad.de/">
+        <a target="_blank" href="https://www.paderbad.de/" rel="noopener noreferrer">
           <StaticImage
             src="../images/paderbad.webp"
             alt="Paderbad"
             height={70}
           ></StaticImage>
         </a>
-        <a href="https://brandschutz-ostbevern.de/">
+        <a target="_blank" href="https://brandschutz-ostbevern.de/" rel="noopener noreferrer">
           <StaticImage
             src="../images/leinkenjost.webp"
             alt="Leinkenjost"
             height={70}
           ></StaticImage>
         </a>
-        <a href="https://www.enerix.de/photovoltaik/warendorf/">
+        <a target="_blank" href="https://www.enerix.de/photovoltaik/warendorf/" rel="noopener noreferrer">
           <StaticImage
             src="../images/enerix.webp"
             alt="Enerix"
