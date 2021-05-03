@@ -22,27 +22,30 @@ const Layout = ({ children }) => {
 
   React.useEffect(() => {
     // if dark mode has previously been toggled, it gets toggled again
-    toggleDarkMode(true);
-  
+    toggleDarkMode(true)
+
     const toggle = document.getElementById("darkModeToggle") as HTMLElement
-    toggle?.addEventListener("click", () => { toggleDarkMode() })
+    toggle?.addEventListener("click", () => {
+      toggleDarkMode()
+    })
   })
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `104px auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        
+      <div id="bodyWrapper">
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <div
+          style={{
+            margin: `104px auto`,
+            maxWidth: 960,
+            padding: `0 1.0875rem 1.45rem`,
+          }}
+        >
+          <main>{children}</main>
+        </div>
+
+        <Footer></Footer>
       </div>
-      
-      <Footer></Footer>
     </>
   )
 }

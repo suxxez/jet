@@ -118,8 +118,8 @@ const IndexPage = () => (
         <Card imageSrc="neubau.webp" heading="Neubau, Altbau, Sanierung"></Card>
         <Card imageSrc="smarthome.webp" heading="Smart Home"></Card>
         <Card imageSrc="knx.webp" heading="KNX"></Card>
-        <Card imageSrc="solar.webp" heading="Solar"></Card>
-        <Card imageSrc="netzwerk.webp" heading="Netzwerk"></Card>
+        <Card imageSrc="solar.webp" heading="Photovoltaik"></Card>
+        <Card imageSrc="netzwerk.webp" heading="Antenne / Netzwerk"></Card>
         <Card imageSrc="alarm.webp" heading="Alarmanlagen"></Card>
       </div>
       <p>
