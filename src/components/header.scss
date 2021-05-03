@@ -8,21 +8,25 @@ Link {
 }
 
 header {
-  position: fixed;
-  background: $background-color;
-  box-shadow: 0px 1px 2px $text-color;
+  position: fixed;  
+  background: transparent;
+  box-shadow: none;
   top: 0;
   width: 100%;
   transition: all 0.3s ease;
   z-index: 1;
 }
 
-.headerDarkMode {
-  background: transparent;
-  box-shadow: none;
+.headerLightMode {
+  background: $background-color;
+  box-shadow: 0px 1px 2px $text-color;
 }
 
 .logo_white {
+  display: block;
+}
+
+.logo_normal {
   display: none;
 }
 
@@ -30,8 +34,7 @@ header.hide {
   top: -100px;
 }
 
-.headerDarkMode.change-color {
-  background: initial;
+.change-color {
   background-color: $stardust-color;
   opacity: 1;
   box-shadow: 0px 1px 2px $background-color;
@@ -60,12 +63,12 @@ header.hide {
   width: 100%;
   text-align: right;
   order: 2;
-  background-color: $background-color;
+  background-color: $stardust-color;
   color: $text-color;
 }
 
-.itemDarkMode {
-  background-color: $stardust-color;
+.itemLightMode {
+  background-color: $background-color;
 }
 
 .active .item {

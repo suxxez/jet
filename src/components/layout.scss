@@ -11,16 +11,24 @@ html {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  background-image: url(../images/white-waves.png);
+  background-image: url(../images/stardust.png);
   background-repeat: repeat;
 }
 
-.htmlDarkMode {
-  background-image: url(../images/stardust.png);
+.htmlLightMode {
+  background-image: url(../images/white-waves.png);
 }
 
-.textDarkMode {
+h1, h2, h3, p, figcaption, a, .copyright {
   color: $background-color;
+}
+
+h1 {
+  text-align: center
+}
+
+.textLightMode {
+  color: $text-color;
 }
 
 body {
@@ -52,7 +60,6 @@ video {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 

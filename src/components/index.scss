@@ -17,11 +17,6 @@
   margin: auto;
 }
 
-h1 {
-  color: $text-color;
-  text-align: center;
-}
-
 .content {
   position: relative;
 }
@@ -100,7 +95,7 @@ figcaption {
   left: 80px;
 }
 
-.lampe_off {
+.lampe_on {
   display: none;
 }
 

@@ -19,7 +19,7 @@ const IndexPage = () => (
         <StaticImage
           src="../images/logo_elektrotechnik.webp"
           alt="Logo"
-          loading="lazy"
+          loading="eager"
           width={500}
         />
       </div>
@@ -54,7 +54,7 @@ const IndexPage = () => (
             <StaticImage
               src="../images/lampe_on.webp"
               alt="Lampe"
-              loading="lazy"
+              loading="eager"
               width={200}
             />
           </div>
@@ -62,7 +62,7 @@ const IndexPage = () => (
             <StaticImage
               src="../images/lampe_off.webp"
               alt="Lampe"
-              loading="eager"
+              loading="lazy"
               width={200}
             />
           </div>
