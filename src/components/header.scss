@@ -17,7 +17,7 @@ header {
   z-index: 1;
 }
 
-.headerLightMode {
+.headerLightMode, .headerLightMode.change-color {
   background: $background-color;
   box-shadow: 0px 1px 2px $text-color;
 }
