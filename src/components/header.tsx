@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { initiateHeaderScroll } from "../scripts/header-scroll"
 
 import hamburger from "../images/svg/hamburger.svg"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Header = () => {
   React.useEffect(() => {
@@ -62,10 +63,10 @@ const Header = () => {
             </Link>
           </li>
           <li className="item">
-            <Link to="/#leistungen">Leistungen</Link>
+            <AnchorLink to="/#leistungen">Leistungen</AnchorLink>
           </li>
           <li className="item">
-            <Link to="/#ueber-uns">Über uns</Link>
+            <AnchorLink to="/#ueber-uns">Über uns</AnchorLink>
           </li>
           <li className="item">
             <Link to="/karriere">Karriere</Link>

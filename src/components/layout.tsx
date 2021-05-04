@@ -7,7 +7,6 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
 import "./index.scss"
-import { toggleDarkMode } from "../scripts/dark-mode"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,16 +18,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
-  React.useEffect(() => {
-    // if dark mode has previously been toggled, it gets toggled again
-    toggleDarkMode(true)
-
-    const toggle = document.getElementById("darkModeToggle") as HTMLElement
-    toggle?.addEventListener("click", () => {
-      toggleDarkMode()
-    })
-  })
 
   return (
     <>

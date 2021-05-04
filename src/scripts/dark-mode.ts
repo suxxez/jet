@@ -16,8 +16,6 @@ export const toggleDarkMode = (forceLightMode?) => {
 
   const cards = document.querySelectorAll(".cardContent")
 
-  console.log(darkModeActive)
-
   if ((darkModeActive && !forceLightMode) || (!darkModeActive && forceLightMode)) {
     html?.classList.add("htmlLightMode")
     text.forEach(element => {
