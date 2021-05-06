@@ -227,9 +227,9 @@ const IndexPage = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
-              src="../images/enerix.webp"
+              src="../images/enerix_waf.webp"
               alt="Enerix"
-              height={70}
+              height={120}
             ></StaticImage>
           </a>
         </div>
