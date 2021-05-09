@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jakobi Elektrotechnik`,
-    description: `Jakobi Elektrotechnik`,
+    description: `Mach mehr aus Deiner Elektroinstallation - in Ostbevern und im Münsterland`,
     url: "https://jakobi-elektrotechnik.de",
     author: `@finnfentker`,
   },

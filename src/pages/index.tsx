@@ -22,7 +22,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="JET" />
+      <SEO title="" />
 
       {/* ------- HEADING SECTION ------- */}
 
