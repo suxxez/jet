@@ -1,13 +1,14 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import jetVideo from "../videos/jet.mp4"
 
 import cursor from "../images/svg/cursor.svg"
 import Card from "../components/card"
 import { toggleDarkMode } from "../scripts/dark-mode"
+import { Script } from "gatsby-script"
 
 const IndexPage = () => {
   React.useEffect(() => {
@@ -22,8 +23,8 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="" />
-
+      <Seo title="Home" />
+      
       {/* ------- HEADING SECTION ------- */}
 
       <div className="headingContainer">
@@ -31,23 +32,25 @@ const IndexPage = () => {
           <StaticImage
             src="../images/logo_elektrotechnik.webp"
             alt="Logo"
-            loading="eager"
+            loading="lazy"
             width={500}
+            placeholder="none"
           />
         </div>
         <div className="logo_white">
           <StaticImage
             src="../images/logo_white.webp"
             alt="Logo"
-            loading="lazy"
+            loading="eager"
             width={500}
+            placeholder="none"
           />
         </div>
         <h1 className="mainHeading">
           Mach mehr aus Deiner Elektroinstallation.
         </h1>
         <div className="videoWrapper">
-          <video controls width="400" /* preload="none" */>
+          <video controls width="600" /* preload="none" */>
             <source src={jetVideo} type="video/mp4" />
           </video>
         </div>
@@ -123,19 +126,36 @@ const IndexPage = () => {
               alt="Tobias"
               height={200}
             ></StaticImage>
-            <h2>Tobias Lander</h2>
+            <h2>Tobias Wolke</h2>
             <p>
               <a href="tel:+491754528180"> +49 175 452 818 0 </a>
               <br />
               <br />
               <a
-                href="mailto:t.lander@jakobi-elektrotechnik.de"
+                href="mailto:t.wolke@jakobi-elektrotechnik.de"
                 className="email-link"
               >
-                t.lander@jakobi-elektrotechnik.de
+                t.wolke@jakobi-elektrotechnik.de
               </a>
             </p>
           </div>
+          
+        <div className="address">
+          <p>
+             Unser neues Büro findet ihr hier: Loburg 21 a, 48346 Ostbevern.
+          </p>
+          <StaticImage
+              src="../images/karte.png"
+              alt="Karte"
+              height={500}
+              loading="lazy"
+              quality={100}
+            ></StaticImage>
+            <p>
+            <a href="https://www.openstreetmap.org/copyright" target="_blank"><u>© OpenStreetMaps contributors</u></a> <br/>
+            Hinweis: Zu einer interaktiven Karte gelangt ihr <a href="https://osm.org/go/0GaCPBNGB-?m=" target="_blank"><u>hier.</u></a>
+          </p>
+        </div>
         </div>
 
         {/* ------- LEISTUNGEN SECTION ------- */}

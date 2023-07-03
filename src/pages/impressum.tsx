@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../components/impressum.scss"
 
@@ -14,23 +14,23 @@ export default function Impressum() {
 
   return (
     <Layout>
-      <SEO title="Impressum" />
+      <Seo title="Impressum" />
       <div>
         <h1>Impressum</h1>
         <p>
           Jakobi Elektrotechnik GmbH <br />
-          Rheder Weg 2<br />
-          33100 Paderborn
+          Schüttenkamp 5<br />
+          33175 Bad Lippspringe
         </p>
         <p>
           <table>
             <tr>
               <td>Telefon</td>
-              <td>05251 1422154</td>
+              <td>05252 93322 0</td>
             </tr>
             <tr>
               <td>Fax</td>
-              <td>05251 2059127</td>
+              <td>05252 93322 11</td>
             </tr>
             <tr>
               <td>E-Mail</td>

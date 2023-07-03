@@ -1,9 +1,12 @@
+const siteUrl = process.env.URL || `https://www.jakobi-elektrotechnik.de`
+
 module.exports = {
   siteMetadata: {
     title: `Jakobi Elektrotechnik`,
     description: `Mach mehr aus Deiner Elektroinstallation - in Ostbevern und im Münsterland`,
     url: "https://jakobi-elektrotechnik.de",
     author: `@finnfentker`,
+    keywords: `elektro, elektrotechnik ostbevern, elektrotechnik münster, münsterland, elektroinstallation`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,6 +42,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-anchor-links`
+    `gatsby-plugin-anchor-links`,
   ],
 }

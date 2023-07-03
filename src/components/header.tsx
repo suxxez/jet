@@ -49,15 +49,17 @@ const Header = () => {
                   loading="lazy"
                   width={128}
                   height={50}
+                  placeholder="none"
                 />
               </div>
               <div className="logo_white">
                 <StaticImage
                   src="../images/logo_white.webp"
                   alt="Logo"
-                  loading="lazy"
+                  loading="eager"
                   width={128}
                   height={50}
+                  placeholder="none"
                 />
               </div>
             </Link>

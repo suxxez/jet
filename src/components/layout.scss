@@ -11,12 +11,14 @@ html {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  //background-color: #2a2727;
   background-image: url(../images/stardust.png);
   background-repeat: repeat;
 }
 
 .htmlLightMode {
-  background-image: url(../images/white-waves.png);
+  background-color: $background-color;
+  background-image: none;
 }
 
 h1, h2, h3, p, figcaption, a, .copyright {
@@ -43,6 +45,13 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#cookies-eu-banner{
+  position: fixed;
+  bottom: 0;
+  background-color: lightblue;
+  z-index: 3;
 }
 
 article,

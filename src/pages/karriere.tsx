@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { toggleDarkMode } from "../scripts/dark-mode"
 
@@ -12,7 +12,7 @@ export default function Karriere() {
 
   return (
     <Layout>
-      <SEO title="Karriere" />
+      <Seo title="Karriere" />
       <div>
         <h1>Karriere</h1>
         <p>Aktuell sind keine Stellen ausgeschrieben.</p>

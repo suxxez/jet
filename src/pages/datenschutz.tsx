@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { toggleDarkMode } from "../scripts/dark-mode"
 
@@ -12,7 +12,7 @@ export default function Datenschutz() {
 
   return (
     <Layout>
-      <SEO title="Datenschutz" />
+      <Seo title="Datenschutz" />
       <div className="datenschutz">
         <h1>Datenschutzerklärung</h1>
         <p>
@@ -20,7 +20,7 @@ export default function Datenschutz() {
           EU-Datenschutzgrundverordnung (DSGVO), ist: <br />
           Jakobi Elektrotechnik GmbH <br />
           Frank Steinheider <br />
-          Ravelweg 3a <br />
+          Loburg 21 a <br />
           48346 Ostbevern
         </p>
         <h2>Ihre Betroffenenrechte</h2>
