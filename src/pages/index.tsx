@@ -124,7 +124,6 @@ const IndexPage = () => {
             >
               t.wolke@jakobi-elektrotechnik.de
             </a>
-
           </div>
           <div className="personCard">
             <StaticImage
@@ -141,13 +140,13 @@ const IndexPage = () => {
               <li>Projektleitung</li>
             </ul>
             <br />
-              <a href="tel:+491717659410">+49 171 765 941 0</a>
-              <a
-                href="mailto:f.steinheider@jakobi-elektrotechnik.de"
-                className="email-link"
-              >
-                f.steinheider@jakobi-elektrotechnik.de
-              </a>
+            <a href="tel:+491717659410">+49 171 765 941 0</a>
+            <a
+              href="mailto:f.steinheider@jakobi-elektrotechnik.de"
+              className="email-link"
+            >
+              f.steinheider@jakobi-elektrotechnik.de
+            </a>
           </div>
           <div className="personCard">
             <StaticImage
@@ -164,21 +163,21 @@ const IndexPage = () => {
               <li>Beratung & Planung</li>
             </ul>
             <br />
-              <a href="tel:+4915784919008">+49 157 849 190 08</a>
-              <a
-                href="mailto:a.heinrichs@jakobi-elektrotechnik.de"
-                className="email-link"
-              >
-                a.heinrichs@jakobi-elektrotechnik.de
-              </a>
+            <a href="tel:+4915784919008">+49 157 849 190 08</a>
+            <a
+              href="mailto:a.heinrichs@jakobi-elektrotechnik.de"
+              className="email-link"
+            >
+              a.heinrichs@jakobi-elektrotechnik.de
+            </a>
           </div>
         </div>
         <br></br>
 
         {/* ------- ADRESSE SECTION ------- */}
 
-      <h1 id="adresse">Unsere Adresse</h1>
-  
+        <h1 id="adresse">Unsere Adresse</h1>
+
         <div className="address">
           <p>
             Unser neues Büro findet ihr hier: Loburg 21 a, 48346 Ostbevern.

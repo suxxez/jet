@@ -5,7 +5,7 @@ export const toggleDarkMode = (forceLightMode?) => {
 
   const html = document.querySelector("html")
   const text = document.querySelectorAll(
-    "h1, h2, h3, p, figcaption, a, .copyright"
+    "h1, h2, h3, p, figcaption, a, .copyright, .personCard ul"
   )
   const header = document.querySelector("header")
   const logos = document.querySelectorAll(".logo_normal")
