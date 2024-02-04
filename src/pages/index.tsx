@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import jetVideo from "../videos/jet.mp4"
 
 import cursor from "../images/svg/cursor.svg"
@@ -103,7 +104,7 @@ const IndexPage = () => {
         <div className="personCardContainer">
           <div className="personCard">
             <StaticImage
-              src="../images/tobias.webp"
+              src="../images/tobias.jpg"
               alt="Tobias"
               height={200}
               loading="lazy"
@@ -127,7 +128,7 @@ const IndexPage = () => {
           </div>
           <div className="personCard">
             <StaticImage
-              src="../images/frank.webp"
+              src="../images/frank.jpeg"
               alt="Frank"
               height={200}
               loading="lazy"
