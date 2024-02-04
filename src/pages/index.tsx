@@ -106,6 +106,8 @@ const IndexPage = () => {
               src="../images/tobias.webp"
               alt="Tobias"
               height={200}
+              loading="lazy"
+              quality={100}
             ></StaticImage>
             <h2>Tobias Wolke</h2>
             <ul className="no-bullets">
@@ -128,6 +130,8 @@ const IndexPage = () => {
               src="../images/frank.webp"
               alt="Frank"
               height={200}
+              loading="lazy"
+              quality={100}
             ></StaticImage>
             <h2>Frank Steinheider</h2>
             <ul className="no-bullets">
@@ -149,6 +153,8 @@ const IndexPage = () => {
               src="../images/alex.jpg"
               alt="Alex"
               height={200}
+              loading="lazy"
+              quality={100}
             ></StaticImage>
             <h2>Alex Heinrichs</h2>
             <ul className="no-bullets">
