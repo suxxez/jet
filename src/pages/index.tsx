@@ -24,7 +24,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      
+
       {/* ------- HEADING SECTION ------- */}
 
       <div className="headingContainer">
@@ -103,156 +103,176 @@ const IndexPage = () => {
         <div className="personCardContainer">
           <div className="personCard">
             <StaticImage
+              src="../images/tobias.webp"
+              alt="Tobias"
+              height={200}
+            ></StaticImage>
+            <h2>Tobias Wolke</h2>
+            <ul className="no-bullets">
+              <li>Betriebsleiter</li>
+              <li>Elektro</li>
+              <li>Beratung & Planung</li>
+            </ul>
+            <br />
+            <a href="tel:+491754528180"> +49 175 452 818 0 </a>
+            <a
+              href="mailto:t.wolke@jakobi-elektrotechnik.de"
+              className="email-link"
+            >
+              t.wolke@jakobi-elektrotechnik.de
+            </a>
+
+          </div>
+          <div className="personCard">
+            <StaticImage
               src="../images/frank.webp"
               alt="Frank"
               height={200}
             ></StaticImage>
             <h2>Frank Steinheider</h2>
-            <p>
+            <ul className="no-bullets">
+              <li>Betriebsleiter</li>
+              <li>Elektro</li>
+              <li>Projektleitung</li>
+            </ul>
+            <br />
               <a href="tel:+491717659410">+49 171 765 941 0</a>
-              <br />
-              <br />
               <a
                 href="mailto:f.steinheider@jakobi-elektrotechnik.de"
                 className="email-link"
               >
                 f.steinheider@jakobi-elektrotechnik.de
               </a>
-            </p>
           </div>
           <div className="personCard">
             <StaticImage
-              src="../images/tobias.webp"
-              alt="Tobias"
+              src="../images/alex.jpg"
+              alt="Alex"
               height={200}
             ></StaticImage>
-            <h2>Tobias Wolke</h2>
-            <p>
-              <a href="tel:+491754528180"> +49 175 452 818 0 </a>
-              <br />
-              <br />
+            <h2>Alex Heinrichs</h2>
+            <ul className="no-bullets">
+              <li>Projektleiter</li>
+              <li>Photovoltaik</li>
+              <li>Beratung & Planung</li>
+            </ul>
+            <br />
+              <a href="tel:+4915784919008">+49 157 849 190 08</a>
               <a
-                href="mailto:t.wolke@jakobi-elektrotechnik.de"
+                href="mailto:a.heinrichs@jakobi-elektrotechnik.de"
                 className="email-link"
               >
-                t.wolke@jakobi-elektrotechnik.de
+                a.heinrichs@jakobi-elektrotechnik.de
               </a>
-            </p>
           </div>
-          
+        </div>
+        <br></br>
+
+        {/* ------- ADRESSE SECTION ------- */}
+
+      <h1 id="adresse">Unsere Adresse</h1>
+  
         <div className="address">
           <p>
-             Unser neues Büro findet ihr hier: Loburg 21 a, 48346 Ostbevern.
+            Unser neues Büro findet ihr hier: Loburg 21 a, 48346 Ostbevern.
           </p>
           <StaticImage
-              src="../images/karte.png"
-              alt="Karte"
-              height={500}
-              loading="lazy"
-              quality={100}
-            ></StaticImage>
-            <p>
-            <a href="https://www.openstreetmap.org/copyright" target="_blank"><u>© OpenStreetMaps contributors</u></a> <br/>
+            src="../images/karte.png"
+            alt="Karte"
+            height={500}
+            loading="lazy"
+            quality={100}
+          ></StaticImage>
+          <p>
+            <a href="https://www.openstreetmap.org/copyright" target="_blank"><u>© OpenStreetMaps contributors</u></a> <br />
             Hinweis: Zu einer interaktiven Karte gelangt ihr <a href="https://osm.org/go/0GaCPBNGB-?m=" target="_blank"><u>hier.</u></a>
           </p>
         </div>
-        </div>
+      </div>
 
-        {/* ------- LEISTUNGEN SECTION ------- */}
+      {/* ------- LEISTUNGEN SECTION ------- */}
 
-        <h1 id="leistungen">Unsere Leistungen</h1>
+      <h1 id="leistungen">Unsere Leistungen</h1>
 
-        <div className="gallery leistungen">
-          <Card
-            imageSrc="neubau.webp"
-            heading="Neubau, Altbau, Sanierung"
-          ></Card>
-          <Card imageSrc="smarthome.webp" heading="Smart Home"></Card>
-          <Card imageSrc="knx.webp" heading="KNX"></Card>
-          <Card imageSrc="solar.webp" heading="Photovoltaik"></Card>
-          <Card imageSrc="netzwerk.webp" heading="Antenne / Netzwerk"></Card>
-          <Card imageSrc="alarm.webp" heading="Alarmanlagen"></Card>
-        </div>
-        <p>
-          <b>und vieles mehr</b>
-        </p>
-        <p>
-          Schau für weitere Eindrücke und Aktuelles gerne auf
-          <a
-            target="_blank"
-            href="https://www.instagram.com/jakobi_elektrotechnik/"
-            className="instagram-link"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Instagram
-          </a>{" "}
-          oder
-          <a
-            target="_blank"
-            href="https://www.facebook.com/Jakobi-Elektrotechnik-313162799360602"
-            className="facebook-link"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Facebook
-          </a>{" "}
-          vorbei!
-        </p>
+      <div className="gallery leistungen">
+        <Card
+          imageSrc="neubau.webp"
+          heading="Neubau, Altbau, Sanierung"
+        ></Card>
+        <Card imageSrc="smarthome.webp" heading="Smart Home"></Card>
+        <Card imageSrc="knx.webp" heading="KNX"></Card>
+        <Card imageSrc="solar.webp" heading="Photovoltaik"></Card>
+        <Card imageSrc="netzwerk.webp" heading="Antenne / Netzwerk"></Card>
+        <Card imageSrc="alarm.webp" heading="Alarmanlagen"></Card>
+      </div>
+      <p>
+        <b>und vieles mehr</b>
+      </p>
+      <p>
+        Schau für weitere Eindrücke und Aktuelles gerne auf
+        <a
+          target="_blank"
+          href="https://www.instagram.com/jakobi_elektrotechnik/"
+          className="instagram-link"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Instagram
+        </a>{" "}
+        oder
+        <a
+          target="_blank"
+          href="https://www.facebook.com/Jakobi-Elektrotechnik-313162799360602"
+          className="facebook-link"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Facebook
+        </a>{" "}
+        vorbei!
+      </p>
 
-        {/* ------- PARTNER SECTION ------- */}
+      {/* ------- PARTNER SECTION ------- */}
 
-        <h1 id="partner">Unsere Partner</h1>
-        <p>
-          Gemeinsam mit unseren Partnern bieten wir viele verschiedene Dienste
-          kombiniert an.
-        </p>
-        <div className="gallery">
-          <a
-            target="_blank"
-            href="https://www.jakobi-haustechnik.de/"
-            rel="noopener noreferrer"
-          >
-            <StaticImage
-              src="../images/haustechnik.webp"
-              alt="Jakobi Haustechnik"
-              height={70}
-            ></StaticImage>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.paderbad.de/"
-            rel="noopener noreferrer"
-          >
-            <StaticImage
-              src="../images/paderbad.webp"
-              alt="Paderbad"
-              height={70}
-            ></StaticImage>
-          </a>
-          <a
-            target="_blank"
-            href="https://brandschutz-ostbevern.de/"
-            rel="noopener noreferrer"
-          >
-            <StaticImage
-              src="../images/leinkenjost.webp"
-              alt="Leinkenjost"
-              height={70}
-            ></StaticImage>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.enerix.de/photovoltaik/warendorf/"
-            rel="noopener noreferrer"
-          >
-            <StaticImage
-              src="../images/enerix_waf.webp"
-              alt="Enerix"
-              height={120}
-            ></StaticImage>
-          </a>
-        </div>
+      <h1 id="partner">Unsere Partner</h1>
+      <p>
+        Gemeinsam mit unseren Partnern bieten wir viele verschiedene Dienste
+        kombiniert an.
+      </p>
+      <div className="gallery">
+        <a
+          target="_blank"
+          href="https://www.jakobi-haustechnik.de/"
+          rel="noopener noreferrer"
+        >
+          <StaticImage
+            src="../images/haustechnik.webp"
+            alt="Jakobi Haustechnik"
+            height={70}
+          ></StaticImage>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.paderbad.de/"
+          rel="noopener noreferrer"
+        >
+          <StaticImage
+            src="../images/paderbad.webp"
+            alt="Paderbad"
+            height={70}
+          ></StaticImage>
+        </a>
+        <a
+          target="_blank"
+          href="https://brandschutz-ostbevern.de/"
+          rel="noopener noreferrer"
+        >
+          <StaticImage
+            src="../images/leinkenjost.webp"
+            alt="Leinkenjost"
+            height={70}
+          ></StaticImage>
+        </a>
       </div>
     </Layout>
   )

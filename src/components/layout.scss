@@ -21,8 +21,16 @@ html {
   background-image: none;
 }
 
-h1, h2, h3, p, figcaption, a, .copyright {
+h1, h2, h3, p, figcaption, a, .copyright, ul {
   color: $background-color;
+}
+
+ul.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 h1 {
