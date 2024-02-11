@@ -15,7 +15,14 @@ export default function Karriere() {
       <Seo title="Karriere" />
       <div>
         <h1>Karriere</h1>
-        <p>Aktuell sind keine Stellen ausgeschrieben.</p>
+        <h2>Aktuell sind folgende Stellen ausgeschrieben:</h2>
+        <ul>
+          <li>Elektroniker für Gebäude- und Energietechnik (w/m/d)</li>
+          <li>Bauhelfer (w/m/d)</li>
+        </ul>
+        <p>
+          Aussagekräftige Bewerbungsunterlagen bitte per Mail an Tobias oder Frank senden.
+        </p>
       </div>
     </Layout>
   )
